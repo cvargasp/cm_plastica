@@ -40,7 +40,7 @@
 					  	<textarea class="form-control contact-textarea" placeholder="Comentario" aria-label="With textarea"></textarea>
 					</div>
 				</div>	
-				<div class="col-lg-6 col-md-6 d-flex flex-column text-right map-area">
+				<div class="col-lg-6 col-md-6 d-flex flex-column text-right-2 map-area">
 					<div id="map">
 						<script>
 							function initMap(){

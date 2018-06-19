@@ -116,11 +116,11 @@
 							<div class="single-footer-widget mail-chimp">
 								<h6>CMPLASTICA</h6>
 								<ul class="footer-nav">
-									<li><a href="#">Inicio</a></li>
-									<li><a href="#">Dra Mora</a></li>
-									<li><a href="#">Procedimientos</a></li>
-									<li><a href="promociones.html">Promociones</a></li>
-									<li><a href="faqs.html">Preguntas Frecuentes</a></li>
+									<li><a href="{{ route('inicio')}}#home">Inicio</a></li>
+									<li><a href="{{ route('inicio')}}#dramora">Dra Mora</a></li>
+									<li><a href="{{ route('inicio')}}#procedimientos">Procedimientos</a></li>
+									<li><a href="{{ route('promociones')}}">Promociones</a></li>
+									<li><a href="{{ route('faqs')}}">Preguntas Frecuentes</a></li>
 									<li><a href="#">Contacto</a></li>
 								</ul>	
 							</div>
