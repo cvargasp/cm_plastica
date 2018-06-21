@@ -2708,12 +2708,12 @@ p {
 }
 
 .info-header p{
-  /*color: #FFFFFF;*/
-  color: #C0C0C0;
+  color: #FFFFFF;
 }
 
 .info-header {
-  background: #777777;
+  /*background: #777777;*/
+  background: #C0C0C0;
   padding-top: 7px;
 }
 
