@@ -2708,7 +2708,8 @@ p {
 }
 
 .info-header p{
-  color: #FFFFFF;
+  /*color: #FFFFFF;*/
+  color: #C0C0C0;
 }
 
 .info-header {
