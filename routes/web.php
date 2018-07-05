@@ -26,3 +26,7 @@ Route::get('/promociones', function(){
 Route::get('/contacto', function(){
 	return view('contacto');
 })->name('contacto');
+
+Route::get('/test', function(){
+	return view('test');
+})->name('test');

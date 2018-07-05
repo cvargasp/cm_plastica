@@ -27,7 +27,6 @@
 			<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
 			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
-
 				<!--
 				CSS
 				============================================= -->
@@ -38,16 +37,20 @@
 			<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 			<link rel="stylesheet" href="css/bootstrap.css">
 			<link rel="stylesheet" href="css/main.css">
+		 	<link rel="stylesheet" type="text/css" href="css/full-slider.css">
 			<style>
 				#map {
 					height: 300px;
 					width: 100%;
 				}
+				.bg-nav{
+					transition: all 1s ease;
+				}
 			</style>
 		</head>
 		<body>
 			<!-- Start Info Area -->
-			<div class="header-top d-flex clear justify-content-between align-items-center info-header">
+			<!-- <div class="header-top d-flex clear justify-content-between align-items-center info-header">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-5 col-md-5 col-sm-0 info-header">
@@ -58,11 +61,44 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 			<!-- End Info Area -->
 
 			<!-- Start Header Area -->
-			<header class="default-header">
+			<nav id="menu" class="navbar navbar-expand-lg fixed-top bg-nav" style="margin-right: 0pc !important;">
+				<div class="container">
+					<div class="logo">
+						<a href="{{ route('inicio')}}"><img src="images/logo_cm.png" height="50px" alt=""></a>
+					</div>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" style="color: #352352;">
+          				<span class="lnr lnr-menu"></span>
+        			</button>
+
+        		<div class="collapse navbar-collapse" id="navbarResponsive">
+		          <ul class="navbar-nav ml-auto">
+		            <li class="nav-item active">
+		              <a href="{{ route('inicio')}}#home">Inicio</a>
+		            </li>
+		            <li class="nav-item">
+		              <a href="{{ route('inicio')}}#dramora">Dra Mora</a>
+		            </li>
+		            <li class="nav-item">
+		              <a href="{{ route('inicio')}}#procedimientos">Procedimientos</a>
+		            </li>
+		            <li class="nav-item">
+		              <a href="{{ route('promociones')}}">Promociones</a>
+		            </li>
+		            <li class="nav-item">
+		              <a href="{{ route('faqs')}}">Preguntas Frecuentes</a>
+		            </li>
+		            <li class="nav-item">
+		              <a href="{{ route('contacto')}}">Contacto</a>
+		            </li>
+		          </ul>
+		        </div>
+				
+			</nav>
+			<!-- <header class="default-header">
 				<div class="container">
 					<div class="header-wrap">
 						<div class="header-top d-flex justify-content-between align-items-center">
@@ -84,7 +120,7 @@
 					</div>
 				</div>
 				<!-- Chatra {literal} -->
-				<script>
+				<!-- <script>
 				    (function(d, w, c) {
 				        w.ChatraID = 'aLE7fGyn9cEA94fyn';
 				        var s = d.createElement('script');
@@ -95,9 +131,9 @@
 				        s.src = 'https://call.chatra.io/chatra.js';
 				        if (d.head) d.head.appendChild(s);
 				    })(document, window, 'Chatra');
-				</script>
+				</script> -->
 				<!-- /Chatra {/literal} -->
-			</header>
+			<!-- </header> -->
 			<!-- End Header Area -->
 
 			@yield('contenido')
@@ -211,5 +247,14 @@
 			<script src="js/waypoints.min.js"></script>
 			<script src="js/jquery.counterup.min.js"></script>
 			<script src="js/main.js"></script>
+			<script>
+			    $(window).scroll(function() {
+			        if ($("#menu").offset().top > 50) {
+			            $("#menu").addClass("bg-white");
+			        } else {
+			            $("#menu").removeClass("bg-white");
+			        }
+			   	});
+			</script>
 		</body>
 	</html>
