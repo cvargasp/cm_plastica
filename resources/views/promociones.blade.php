@@ -14,35 +14,33 @@
 					</p>
 				</div>
 			</div>
-			<div class="row">
-				<div class="sinlge-blog col-lg-4 col-md-4 text-center d-flex flex-column">
-					<a href="#" class="promocion">CIRUGÍA ESTÉTICA</a>
+			@php
+			$promotions=\App\Promotion::all();
+			@endphp
+			<?php
+				//Columns must be a factor of 12 (1,2,3,4,6,12)
+				$numOfCols = 3;
+				$rowCount = 0;
+				$bootstrapColWidth = 12 / $numOfCols;
+				?>
+				<div class="row">
+				<?php
+				foreach($promotions as $promotion){
+				?>  
+				<div class="sinlge-blog col-lg-4 col-md-4 text-center d-flex flex-column" style="margin-bottom: 70px;">
+					<a href="#" class="promocion">{{ $promotion['name'] }}</a>
 					<div class="hovereffect">
 						<a href="#">
-							<img class="f-img mx-auto img-promocion" src="images/p1.jpg" height="" width="100%" alt="">
+							<img class="f-img mx-auto img-promocion" src="images/{{ $promotion['filename'] }}" height="" width="100%" alt="">
 						</a>
 					</div>
 					<a href="#" class="ver_promocion"><i class="fas fa-plus-circle"></i> Ver más</a>
 				</div>
-				<div class="sinlge-blog col-lg-4 col-md-4 text-center d-flex flex-column">
-					<a href="#" class="promocion">CIRUGÍA REPARADORA</a>
-					<div class="hovereffect">
-						<a href="#">
-							<img class="f-img mx-auto img-promocion" src="images/p2.jpg" height="" width="100%" alt="">
-						</a>
-					</div>
-					<a href="#" class="ver_promocion"><i class="fas fa-plus-circle"></i> Ver más</a>
-				</div>
-				<div class="sinlge-blog col-lg-4 col-md-4 text-center d-flex flex-column">
-					<a href="#" class="promocion">MÍNIMAMENTE INVASIVOS</a>
-					<div class="hovereffect">
-						<a href="#">
-							<img class="f-img mx-auto img-promocion" src="images/p3.jpg" height="" width="100%" alt="">
-						</a>
-					</div>
-					<a href="#" class="ver_promocion"><i class="fas fa-plus-circle"></i> Ver más</a>
-				</div>
-			</div>
+				<?php
+				    $rowCount++;
+				    if($rowCount % $numOfCols == 0) echo '</div><div class="row">';
+				}
+				?>
 		</div>
 	</section>
 	<!-- end content Area -->

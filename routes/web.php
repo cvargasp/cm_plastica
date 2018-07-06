@@ -30,3 +30,5 @@ Route::get('/contacto', function(){
 Route::get('/test', function(){
 	return view('test');
 })->name('test');
+
+Route::resource('promotions','PromotionController');
