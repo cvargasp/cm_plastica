@@ -31,4 +31,8 @@ Route::get('/test', function(){
 	return view('test');
 })->name('test');
 
+Route::get('promociones/{promoId}', function ($promoId) {
+   	return view('detalle_promociones', ['promoId' => $promoId]);
+})->name('promo_detalles');
+
 Route::resource('promotions','PromotionController');
