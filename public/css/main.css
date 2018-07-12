@@ -1924,7 +1924,7 @@ nav.hide {
 
 nav a {
   color: #000;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 500;
   text-transform: uppercase;
   margin: 0 25px;
@@ -2248,7 +2248,8 @@ nav a:hover {
 
 .about-right h1 {
   color: #fff;
-  margin-bottom: 45px;
+  margin-top: 25px;
+  margin-bottom: 30px;
 }
 
 @media (max-width: 1280px) and (min-width: 988px) {
@@ -2440,11 +2441,13 @@ nav a:hover {
   margin-bottom: 25px;
   font-weight: 600;
   text-transform: capitalize;
+  font-size: 36px;
 }
 
 .blog-area p {
   margin-bottom: 45px;
   text-align: center;
+  font-size: 1.7em;
 }
 
 .single-blog h4 {
@@ -2744,42 +2747,6 @@ p {
   color: #FFFFFF;
 }
 
-.hovereffect {
-width:100%;
-height:100%;
-float:left;
-overflow:hidden;
-position:relative;
-text-align:center;
-cursor:default;
-}
-
-.hovereffect .overlay {
-width:100%;
-height:100%;
-position:absolute;
-overflow:hidden;
-top:0;
-left:0;
-opacity:0;
-background-color:rgba(0,0,0,0.5);
--webkit-transition:all .4s ease-in-out;
-transition:all .4s ease-in-out
-}
-
-.hovereffect img {
-display:block;
-position:relative;
--webkit-transition:all .4s linear;
-transition:all .4s linear;
-}
-
-.hovereffect:hover img {
--ms-transform:scale(1.2);
--webkit-transform:scale(1.2);
-transform:scale(1.2);
-}
-
 .icon-contact {
   color: #495057;
 }
@@ -2804,11 +2771,88 @@ transform:scale(1.2);
   height: 240px;
 }
 
-.faqs a {
+.faq-question a{
   color: #34495e;
-  font-size: 1.4em;
+  font-size: 1.5em;
+}
+
+.faq-answer {
+  font-size: 1.3em;
 }
 
 .card-header {
   background-color: #eaeaea;
+}
+
+#home h1{
+  font-size: 3em;
+}
+
+#home h4{
+  font-size: 2em;
+}
+
+.procedimientos-text p{
+  font-size: 1.3em;
+}
+
+.promo-detail-header-area {
+  padding-top: 120px;
+  padding-bottom: 60px;
+}
+
+.promo-detail-header-area h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: 4em;
+}
+
+.promo-detail-header-area p {
+  margin-bottom: 45px;
+  text-align: center;
+  font-size: 1.7em;
+}
+
+.promo-detail-include {
+  font-size: 20px;
+  padding-top: 20px;
+  margin-left: 10px;
+}
+
+.promo-detail-list {
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+.promo-detail h1{
+  font-size: 2.3em;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 0.5em; 
+  margin-left: 10px;
+  color: #34495e;
+}
+
+.promo-detail h2{
+  font-size: 1.6em;
+  margin-left: 10px;
+  color: #95a5a6;
+}
+
+.promo-detail p ul li{
+  font-size: 1.5em;
+  margin-top: 1em;
+  margin-left: 10px;
+  color: #34495e;
+}
+
+.promotion-detail-area {
+  background-color: #ecf0f1;
+  padding: 6em 0px;
+}
+
+.effect-julia img {
+  box-shadow: 10px 10px #C0C0C0;
 }
