@@ -4,7 +4,7 @@
 			<!-- Mobile Specific Meta -->
 			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 			<!-- Favicon-->
-			<link rel="shortcut icon" href="{{asset('images/fav.png')}}">
+			<link rel="shortcut icon" href="images/fav.png">
 			<!-- Author Meta -->
 			<meta name="author" content="Colorlib">
 			<!-- Meta Description -->
@@ -14,11 +14,11 @@
 			<!-- meta character set -->
 			<meta charset="UTF-8">
 			<!-- favicon set -->
-			<link rel="apple-touch-icon" sizes="180x180" href="{{asset('images/favicon/apple-touch-icon.png')}}">
-			<link rel="icon" type="image/png" sizes="32x32" href="{{asset('images/favicon/favicon-32x32.png')}}">
-			<link rel="icon" type="image/png" sizes="16x16" href="{{asset('images/favicon/favicon-16x16.png')}}">
-			<link rel="manifest" href="{{asset('images/favicon/site.webmanifest')}}">
-			<link rel="mask-icon" href="{{asset('images/favicon/safari-pinned-tab.svg')}}" color="#5bbad5">
+			<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+			<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+			<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+			<link rel="manifest" href="images/favicon/site.webmanifest">
+			<link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
 			<meta name="msapplication-TileColor" content="#da532c">
 			<meta name="theme-color" content="#ffffff">
 			<!-- Site Title -->
@@ -30,15 +30,14 @@
 				<!--
 				CSS
 				============================================= -->
-			<link rel="stylesheet" href="{{asset('css/linearicons.css')}}">
-			<link rel="stylesheet" href="{{asset('css/font-awesome.min.css')}}">
-			<link rel="stylesheet" href="{{asset('css/magnific-popup.css')}}">
-			<link rel="stylesheet" href="{{asset('css/nice-select.css')}}">
+			<link rel="stylesheet" href="css/linearicons.css">
+			<link rel="stylesheet" href="css/font-awesome.min.css">
+			<link rel="stylesheet" href="css/magnific-popup.css">
+			<link rel="stylesheet" href="css/nice-select.css">
 			<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-			<link rel="stylesheet" href="{{asset('css/bootstrap.css')}}">
-			<link rel="stylesheet" href="{{asset('css/main.css')}}">
-		 	<link rel="stylesheet" type="text/css" href="{{asset('css/full-slider.css')}}">
-			<link rel="stylesheet" href="{{asset('css/hovereffects.css')}}">
+			<link rel="stylesheet" href="css/bootstrap.css">
+			<link rel="stylesheet" href="css/main.css">
+		 	<link rel="stylesheet" type="text/css" href="css/full-slider.css">
 			<style>
 				#map {
 					height: 300px;
@@ -51,7 +50,7 @@
 		</head>
 		<body>
 			<!-- Start Info Area -->
-			<!-- <div class="navbar header-top d-flex clear justify-content-between fixed-top align-items-center info-header">
+			<!-- <div class="header-top d-flex clear justify-content-between align-items-center info-header">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-5 col-md-5 col-sm-0 info-header">
@@ -69,7 +68,7 @@
 			<nav id="menu" class="navbar navbar-expand-lg fixed-top bg-nav" style="margin-right: 0pc !important;">
 				<div class="container">
 					<div class="logo">
-						<a href="{{ route('inicio')}}"><img src="{{asset('images/logo_cm.png')}}" height="50px" alt=""></a>
+						<a href="{{ route('inicio')}}"><img src="images/logo_cm.png" height="50px" alt=""></a>
 					</div>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" style="color: #352352;">
           				<span class="lnr lnr-menu"></span>
@@ -143,10 +142,10 @@
 			<footer class="footer-area section-gap">
 				<div class="container">
 					<div class="row">
-						<div class="col-lg-2  col-md-6 text-center">
+						<div class="col-lg-2  col-md-6">
 							<div class="single-footer-widget">															
-								<img class="img-fluid" src="{{asset('images/logo2.png')}}" alt="">
-								<img class="img-fluid" src="{{asset('images/webpay.png')}}" alt="">
+								<img class="img-fluid" src="images/logo2.png" alt="">
+								<img class="img-fluid" src="images/webpay.png" alt="">
 							</div>
 						</div>
 						<div class="col-lg-2  col-md-6">
@@ -236,18 +235,18 @@
 			</footer>
 			<!-- End footer Area -->
 
-			<script src="{{asset('js/vendor/jquery-2.2.4.min.js')}}"></script>
+			<script src="js/vendor/jquery-2.2.4.min.js"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-			<script src="{{asset('js/vendor/bootstrap.min.js')}}"></script>
-			<script src="{{asset('js/jquery.ajaxchimp.min.js')}}"></script>
-			<script src="{{asset('js/jquery.nice-select.min.js')}}"></script>
-			<script src="{{asset('js/jquery.sticky.js')}}"></script>
-			<script src="{{asset('js/parallax.min.js')}}"></script>
+			<script src="js/vendor/bootstrap.min.js"></script>
+			<script src="js/jquery.ajaxchimp.min.js"></script>
+			<script src="js/jquery.nice-select.min.js"></script>
+			<script src="js/jquery.sticky.js"></script>
+			<script src="js/parallax.min.js"></script>
 			<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-			<script src="{{asset('js/jquery.magnific-popup.min.js')}}"></script>
-			<script src="{{asset('js/waypoints.min.js')}}"></script>
-			<script src="{{asset('js/jquery.counterup.min.js')}}"></script>
-			<script src="{{asset('js/main.js')}}"></script>
+			<script src="js/jquery.magnific-popup.min.js"></script>
+			<script src="js/waypoints.min.js"></script>
+			<script src="js/jquery.counterup.min.js"></script>
+			<script src="js/main.js"></script>
 			<script>
 			    $(window).scroll(function() {
 			        if ($("#menu").offset().top > 50) {

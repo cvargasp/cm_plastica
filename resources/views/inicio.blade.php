@@ -102,7 +102,7 @@
 			    		<span class="carousel-control-next-icon" aria-hidden="true"></span>
 			    		<span class="sr-only">Next</span>
 			 		</a> -->
-		</div>
+		</div> -->
 	</section>
 
 	<section class="about-area" id="dramora">
@@ -111,7 +111,7 @@
 				<div class="col-lg-6 col-md-12 about-left no-padding">
 					<img class="img-fluid" src="images/about-img.jpg" alt="">
 				</div>
-				<div class="col-lg-6 col-md-12 about-right no-padding text-left">
+				<div class="col-lg-6 col-md-12 about-right no-padding">
 					<h1>DRA. CARLA MORA PULIDO</h1>
 					<h2>Cirujano Plástico</h2>
 					<br>
@@ -152,7 +152,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="single-blog col-lg-4 col-md-4 text-center d-flex flex-column procedimientos-text">
+				<div class="single-blog col-lg-4 col-md-4 text-center d-flex flex-column">
 					<img class="f-img mx-auto" src="images/cirugia_estetica.png" height="200px" alt="">
 					<h4>
 						<a href="#">CIRUGÍA ESTÉTICA</a>
@@ -164,7 +164,7 @@
 						<button type="button" class="btn btn-info mt-auto">VER MÁS</button>								
 					</div>
 				</div>
-				<div class="single-blog col-lg-4 col-md-4 text-center d-flex flex-column procedimientos-text">
+				<div class="single-blog col-lg-4 col-md-4 text-center d-flex flex-column">
 					<img class="f-img mx-auto" src="images/cirugia_reparadora.png" height="200px" alt="">
 					<h4>
 						<a href="#">CIRUGÍA REPARADORA</a>
@@ -176,7 +176,7 @@
 						<button type="button" class="btn btn-info mt-auto">VER MÁS</button>								
 					</div>						
 				</div>
-				<div class="single-blog col-lg-4 col-md-4 text-center d-flex flex-column procedimientos-text">
+				<div class="single-blog col-lg-4 col-md-4 text-center d-flex flex-column">
 					<img class="f-img mx-auto" src="images/minimamente_invasivos.png" height="200px" alt="">
 					<h4>
 						<a href="#">MÍNIMAMENTE INVASIVOS</a>

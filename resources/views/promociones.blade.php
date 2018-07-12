@@ -27,29 +27,20 @@
 				<?php
 				foreach($promotions as $promotion){
 				?>  
-				<div class="col-lg-4 col-md-4 text-center d-flex flex-column" >
-					<div class="grid">
-						<figure class="effect-julia">
-							<img src="images/{{ $promotion['filename'] }}">
-							<figcaption>
-							<h2><span>{{$promotion['name']}}</span></h2>
-							<div>								
-								<p> OFERTA: {{$promotion['promotion_price']}}</p>
-								<br>
-								<p> ANTES: {{$promotion['normal_price']}}</p>
-							</div>
-							<a href="{{ route('promo_detalles',['promoID' => $promotion['id']])}}">Ver más</a>
-						</figcaption>	
-						</figure>
+				<div class="sinlge-blog col-lg-4 col-md-4 text-center d-flex flex-column" style="margin-bottom: 70px;">
+					<a href="#" class="promocion">{{ $promotion['name'] }}</a>
+					<div class="hovereffect">
+						<a href="#">
+							<img class="f-img mx-auto img-promocion" src="images/{{ $promotion['filename'] }}" height="" width="100%" alt="">
+						</a>
 					</div>
-					
+					<a href="#" class="ver_promocion"><i class="fas fa-plus-circle"></i> Ver más</a>
 				</div>
 				<?php
 				    $rowCount++;
 				    if($rowCount % $numOfCols == 0) echo '</div><div class="row">';
 				}
 				?>
-			</div>
 		</div>
 	</section>
 	<!-- end content Area -->
