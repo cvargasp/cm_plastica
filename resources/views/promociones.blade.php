@@ -2,7 +2,6 @@
 
 @section('contenido')
 
-
 	<!-- Start content Area -->
 	<section class="blog-area section-gap" id="procedimientos">
 		<div class="container">
@@ -23,30 +22,40 @@
 				$rowCount = 0;
 				$bootstrapColWidth = 12 / $numOfCols;
 				?>
-				<div class="row">
+				<div class="row justify-content-center">
 				<?php
 				foreach($promotions as $promotion){
 				?>  
-				<div class="col-lg-4 col-md-4 text-center d-flex flex-column" >
-					<div class="grid">
-						<figure class="effect-julia">
-							<img src="images/{{ $promotion['filename'] }}">
-							<figcaption>
-							<h2><span>{{$promotion['name']}}</span></h2>
-							<div>								
-								<p> OFERTA: {{$promotion['promotion_price']}}</p>
-								<br>
-								<p> ANTES: {{$promotion['normal_price']}}</p>
-							</div>
-							<a href="{{ route('promo_detalles',['promoID' => $promotion['id']])}}">Ver más</a>
-						</figcaption>	
-						</figure>
-					</div>
-					
+				<div class="col-auto mb-3" >
+					<div class="card grid h-100" style="width: 18rem; display: flex">
+							<figure class="effect-julia">
+								<img src="images/{{ $promotion['filename'] }}">
+								<figcaption>
+								@php
+								 	$promotion_price = number_format($promotion['promotion_price'], 0, '.', '.');
+								 	$normal_price = number_format($promotion['normal_price'], 0, '.', '.');
+								@endphp
+								<div>		
+								@if( $promotion['promotion_price'] == $promotion['normal_price'])
+									<p> PRECIO: ${{$normal_price}}</p>
+								@else
+									<p> OFERTA: ${{$promotion_price}}</p>
+									<br>
+									<p> ANTES: ${{$normal_price}}</p>
+								@endif						
+									
+								</div>
+								<a href="{{ route('promo_detalles',['promoID' => $promotion['id']])}}">Ver más</a>
+							</figcaption>	
+							</figure>
+						<div class="span2 mt-auto">
+							<h3> {{$promotion['name']}} </h3>						
+						</div>
+					</div>					
 				</div>
 				<?php
 				    $rowCount++;
-				    if($rowCount % $numOfCols == 0) echo '</div><div class="row">';
+				    if($rowCount % $numOfCols == 0) echo '</div><div class="row justify-content-center">';
 				}
 				?>
 			</div>

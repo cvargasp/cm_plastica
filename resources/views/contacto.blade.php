@@ -14,7 +14,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="sinlge-blog col-lg-6 col-md-6 text-center d-flex flex-column">
+				<div class="single-blog col-lg-6 col-md-6 text-center d-flex flex-column">
 					<div class="input-group mb-3">
 					  	<div class="input-group-prepend">
 					    	<span class="input-group-text" id="basic-addon1"><i class="fas fa-user icon-contact"></i></span>
@@ -39,6 +39,7 @@
 					  	</div>
 					  	<textarea class="form-control contact-textarea" placeholder="Comentario" aria-label="With textarea"></textarea>
 					</div>
+					<input type="submit" class="btn btn-info" id="submit" name="submit" value="Enviar mensaje" style="margin-top: 10px">
 				</div>	
 				<div class="col-lg-6 col-md-6 d-flex flex-column text-right-2 map-area">
 					<div id="map">
@@ -60,8 +61,9 @@
 					<br>
 					<p> <i class="fas fa-map-marker icon-contact"></i>  Antonio Bellet 143 oficina 408, Providencia, Región Metropolitana. </p>
 					<p> <span class="fas fa-at icon-contact"></span> contacto@cmplastica.cl </p>
-					<p> <span class="fas fa-phone icon-contact"></span>  +56 9 3260 2113</p>
-					<p> <span class="fas fa-phone icon-contact"></span>  +56 9 5668 2487 </p>
+					<p> <span class="fab fa-whatsapp icon-contact"></span>  +56 9 3260 2113</p>
+					<p> <span class="fab fa-whatsapp icon-contact"></span>  +56 9 5668 2487 </p>
+					<p> <span class="fas fa-phone icon-contact"></span> 2 266 479 83 </p>
 				</div>
 			</div>
 		</div>

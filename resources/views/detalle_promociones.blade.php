@@ -21,13 +21,22 @@ $promotion = DB::table('promotions')->where('id', $promoId)->first();
 <div class="promotion-detail-area">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-5 col-md-5 effect-julia">
+			<div class="col-lg-5 col-md-5 effect-julia promo-image-detail">
 				<img src="{{asset('images/'.$promotion->filename)}}" width="100%">
 			</div>
 			<div class="col-lg-7 col-md-7 text-left promo-detail">
 				<h1> {{ $promotion->name }} </h1>
-				<h2> Oferta: ${{ $promotion->promotion_price }} </h2>
-				<h2> Normal: ${{ $promotion->normal_price }} </h2>
+				@php
+					$promotion_price = number_format($promotion->promotion_price, 0, '.', '.');
+					$normal_price = number_format($promotion->normal_price, 0, '.', '.');
+				@endphp
+					
+				@if( $promotion->promotion_price == $promotion->normal_price)
+					<h2> Precio: ${{$normal_price}}</h2>
+				@else
+					<h2> Oferta: ${{$promotion_price}}</h2>
+					<h2> Normal: ${{$normal_price}}</h2>
+				@endif	
 				<p class="promo-detail-include">Incluye:</p>
 				@php
 				echo "<ul class=\"promo-detail-list\">";

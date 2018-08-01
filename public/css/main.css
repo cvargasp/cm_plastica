@@ -1911,10 +1911,10 @@ nav {
     background: #fff;
   }
   nav a {
-    color: #2482ff !important;
+    color: #138496 !important;
   }
   nav a:hover {
-    color: #2482ff;
+    color: #138496;
   }
 }
 
@@ -1938,7 +1938,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #2482ff;
+  color: #138496;
 }
 
 .section-gap {
@@ -2712,12 +2712,14 @@ p {
 
 .info-header p{
   color: #FFFFFF;
+  margin: 10px 0;
+  font-size: 14px;
 }
 
 .info-header {
   /*background: #777777;*/
   background: #C0C0C0;
-  padding-top: 7px;
+  /*padding: 10px 0px;*/
 }
 
 @media (max-width: 1024px){
@@ -2764,7 +2766,7 @@ p {
 }
 
 .map-area p {
-  margin: 0;
+  margin: 5px;
 }
 
 .contact-textarea {
@@ -2806,7 +2808,7 @@ p {
   margin-bottom: 25px;
   font-weight: 600;
   text-transform: capitalize;
-  font-size: 4em;
+  font-size: 36px;
 }
 
 .promo-detail-header-area p {
@@ -2855,4 +2857,73 @@ p {
 
 .effect-julia img {
   box-shadow: 10px 10px #C0C0C0;
+}
+
+.promo-image-detail {
+  padding-bottom: 50px
+}
+
+.hidden-div {
+  display: none !important;
+}
+
+.white-text {
+  color: #fff !important;
+}
+
+.procedure-details h1 {
+  font-size: 2.3em;
+  text-align: left;
+  margin-top: 0;  
+  padding: 0 30px;
+  margin-bottom: 0.5em; 
+  color: #34495e;
+}
+
+.procedure-details h2 {
+  font-size: 1.6em;
+  margin-top: 10px;  
+  padding: 15px 30px;
+  color: #95a5a6;
+}
+
+.procedure-details p{
+  font-size: 20px;
+  padding: 0 30px;
+  text-align: justify;
+}
+
+.procedure-details li {
+  font-size: 20px;
+  text-align: justify;
+}
+
+.procedure-details ul {
+  font-size: 20px;
+  padding: 0 50px;  
+  padding-bottom: 20px;
+  text-align: justify;
+}
+
+.input-group .select {
+  position: relative;
+  z-index: 2;
+  float: left;
+  width: 100%;
+  margin-bottom: 0;
+  display: table;
+  table-layout: fixed;
+}
+
+.logos {
+  margin-bottom: 20px;
+}
+
+
+@media (max-width: 991.98px) {
+  .navbar-move {
+    padding-right: 0;
+    padding-left: 0;
+    margin-top: 0 !important;
+  }
 }

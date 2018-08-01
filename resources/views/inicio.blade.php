@@ -3,7 +3,7 @@
 @section('contenido')
 
 	<section id="home">
-		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="4000">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -105,6 +105,48 @@
 		</div>
 	</section>
 
+	<section class="blog-area section-gap">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-8 pb-30 header-text">
+					<h1>Testimonios</h1>
+					<p>
+						Ellos confiaron en nosotros.
+					</p>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-auto mb-3">
+					<div class="card" style="width: 18rem;">
+					  	<img class="card-img-top" src="{{asset('images/c1.jpg')}}" alt="Card image cap">
+					  	<div class="card-body">
+					    	<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					    	<p>Nombre Apellido</p>
+					  	</div>
+					</div>
+				</div>
+				<div class="col-auto mb-3">
+					<div class="card" style="width: 18rem;">
+					  	<img class="card-img-top" src="{{asset('images/c2.jpg')}}" alt="Card image cap">
+					  	<div class="card-body">
+					    	<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					    	<p>Nombre Apellido</p>
+					  	</div>
+					</div>
+				</div>
+				<div class="col-auto mb-3">
+					<div class="card" style="width: 18rem;">
+					  	<img class="card-img-top" src="{{asset('images/c3.jpg')}}" alt="Card image cap">
+					  	<div class="card-body">
+					    	<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					    	<p>Nombre Apellido</p>
+					  	</div>
+					</div>
+				</div>
+			</div>				
+		</div>
+	</section>
+
 	<section class="about-area" id="dramora">
 		<div class="container-fluid">
 			<div class="row d-flex justify-content-end align-items-center">
@@ -124,7 +166,7 @@
 						<li type="disc"><p>Miembro de la Sociedad Chilena de Cirugía Plástica.</p></li>
 						<li type="disc"><p>Miembro de la Sociedad Americana de Cirugía Plástica.</p></li>
 					</ul>
-					<div class="row">
+					<div class="row logos">
 						<div class="col">
 							<img class="img-fluid " src="images/conacem_sigla.png" alt="">
 						</div>
@@ -134,6 +176,12 @@
 						<div class="col">
 							<img class="img-fluid" src="images/udechile.png" alt="">
 						</div>
+						<div class="col">
+							<img class="img-fluid" src="images/asps2.png" alt="">
+						</div>
+					</div>
+					<div class="row justify-content-end">
+						<a class="btn btn-info mt-auto white-text" href="{{asset('files/curriculum_cm.pdf')}}"><i class="far fa-file-pdf" style="color: white;"></i> Curriculum PDF</a>
 					</div>
 				</div>						
 			</div>
@@ -153,39 +201,45 @@
 			</div>
 			<div class="row">
 				<div class="single-blog col-lg-4 col-md-4 text-center d-flex flex-column procedimientos-text">
-					<img class="f-img mx-auto" src="images/cirugia_estetica.png" height="200px" alt="">
+					<a href="{{ route('cirugia_estetica') }}">
+						<img class="f-img mx-auto" src="images/cirugia_estetica.png" height="200px" alt="">
+					</a>
 					<h4>
-						<a href="#">CIRUGÍA ESTÉTICA</a>
+						<a href="{{ route('cirugia_estetica') }}">CIRUGÍA ESTÉTICA</a>
 					</h4>
 					<p>
 						Tiene como finalidad mejorar la apariencia de la persona según parámetros estéticos. Logrando un aumento de la autoestima y por consecuencia del atractivo de la persona.
 					</p>
 					<div class="span2 mt-auto">
-						<button type="button" class="btn btn-info mt-auto">VER MÁS</button>								
+						<a class="btn btn-info mt-auto white-text" href="{{ route('cirugia_estetica') }}">VER MÁS</a>							
 					</div>
 				</div>
 				<div class="single-blog col-lg-4 col-md-4 text-center d-flex flex-column procedimientos-text">
-					<img class="f-img mx-auto" src="images/cirugia_reparadora.png" height="200px" alt="">
+					<a href="{{ route('cirugia_reparadora') }}">
+						<img class="f-img mx-auto" src="images/cirugia_reparadora.png" height="200px" alt="">
+					</a>
 					<h4>
-						<a href="#">CIRUGÍA REPARADORA</a>
+						<a href="{{ route('cirugia_reparadora') }}">CIRUGÍA REPARADORA</a>
 					</h4>
 					<p>
 						Tiene como finalidad reconstruir un segmento corporal y su funcionalidad, dentro de esta área encontramos cirugía de quemaduras, fisurados, reconstrucción post traumatismo o post tratamientos por cáncer, entre otras.
 					</p>
 					<div class="span2 mt-auto">
-						<button type="button" class="btn btn-info mt-auto">VER MÁS</button>								
+						<a class="btn btn-info mt-auto white-text" href="{{ route('cirugia_reparadora') }}">VER MÁS</a>								
 					</div>						
 				</div>
 				<div class="single-blog col-lg-4 col-md-4 text-center d-flex flex-column procedimientos-text">
-					<img class="f-img mx-auto" src="images/minimamente_invasivos.png" height="200px" alt="">
+					<a href="{{ route('minimamente_invasivos') }}">
+						<img class="f-img mx-auto" src="images/minimamente_invasivos.png" height="200px" alt="">
+					</a>
 					<h4>
-						<a href="#">MÍNIMAMENTE INVASIVOS</a>
+						<a href="{{ route('minimamente_invasivos') }}">MÍNIMAMENTE INVASIVOS</a>
 					</h4>
 					<p>
 						Son procedimientos no quirúrgicos que se realizan de manera ambulatoria, que como su nombre lo indica, son mínimamente invasivos, principalmente punciones, como es el caso de la prevención y tratamiento de las arrugas con Toxina Botulínica o restauración del volumen facial con Acido Hialurónico.
 					</p>
 					<div class="span2 mt-auto">
-						<button type="button" class="btn btn-info mt-auto">VER MÁS</button>								
+						<a class="btn btn-info mt-auto white-text" href="{{ route('minimamente_invasivos') }}">VER MÁS</a>						
 					</div>
 				</div>
 			</div>

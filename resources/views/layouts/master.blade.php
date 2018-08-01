@@ -41,21 +41,47 @@
 			<link rel="stylesheet" href="{{asset('css/hovereffects.css')}}">
 			<style>
 				#map {
-					height: 300px;
+					height: 200px;
 					width: 100%;
 				}
 				.bg-nav{
 					transition: all 1s ease;
 				}
 			</style>
+			<!-- Smartsupp Live Chat script -->
+			<script type="text/javascript">
+				var _smartsupp = _smartsupp || {};
+				_smartsupp.key = 'ac004477440663742bcd2e4aff6aa39a546bec88';
+				window.smartsupp||(function(d) {
+				  var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+				  s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+				  c.type='text/javascript';c.charset='utf-8';c.async=true;
+				  c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+				})(document);
+			</script>
 		</head>
 		<body>
 			<!-- Start Info Area -->
-			<!-- <div class="navbar header-top d-flex clear justify-content-between fixed-top align-items-center info-header">
+			<div class="info-header">
+				<div class="container d-none d-lg-block">
+					<div class="row justify-content-between hidden-info">
+						<div class="col text-left">
+							<p> <a class="text-white" href="https://www.google.com/maps/place/CM+Plástica/@-33.425824,-70.6189394,17.17z/data=!4m8!1m2!2m1!1scm+plastica!3m4!1s0x9662cff1e94dce83:0x495b7a82fbd6377e!8m2!3d-33.426064!4d-70.617483"> Antonio Bellet 143 oficina 408, Providencia, RM. </a></p>
+						</div>
+						<div class="col text-right">
+							<p> <span style="margin-right:15px;"> Teléfonos: <a class="text-white" href="tel:+56932602113">+56932602113</a> / <a class="text-white" href="tel:+56956682487">+56956682487</a> </span> 
+							<a href="https://web.facebook.com/cmplastica/"><i class="fab fa-facebook-f" style="color: white;"></i></a> 
+							<a href="https://www.instagram.com/cmplastica/"><i class="fab fa-instagram" style="color: white;"></i></a>
+							<a href="https://www.youtube.com/channel/UCPS5lgBIuszTHQB0Om1exAg"><i class="fab fa-youtube" style="color: white;"></i></a></p>
+						</div>
+					</div>
+				</div>				
+			</div>
+			<!-- <div class="navbar header-top d-flex clear justify-content-between align-items-center info-header">
 				<div class="container">
-					<div class="row">
+					<div class="row justify-content-end">
 						<div class="col-lg-5 col-md-5 col-sm-0 info-header">
-							<p> Antonio Bellet 143 oficina 408, Providencia, Región Metropolitana. </p>
+							<p> Antonio Bellet 143 oficina 408, Providencia, RM. </p>
 						</div>
 						<div class="col-lg-7 col-md-7 col-sm-0 text-right info-header">
 							<p> Horario: <span> Lun a Vie: 9 a 20 hrs, Sáb: 9 a 14 hrs. </span>  Teléfonos:  <span> +56932602113 / +56956682487 </span> </p>
@@ -66,7 +92,7 @@
 			<!-- End Info Area -->
 
 			<!-- Start Header Area -->
-			<nav id="menu" class="navbar navbar-expand-lg fixed-top bg-nav" style="margin-right: 0pc !important;">
+			<nav id="menu" class="navbar navbar-expand-lg fixed-top bg-nav navbar-move" style="margin-top: 42px; margin-right: 0px !important;">
 				<div class="container">
 					<div class="logo">
 						<a href="{{ route('inicio')}}"><img src="{{asset('images/logo_cm.png')}}" height="50px" alt=""></a>
@@ -78,10 +104,10 @@
         		<div class="collapse navbar-collapse" id="navbarResponsive">
 		          <ul class="navbar-nav ml-auto">
 		            <li class="nav-item active">
-		              <a href="{{ route('inicio')}}#home">Inicio</a>
+		              <a href="{{ route('inicio')}}">Inicio</a>
 		            </li>
 		            <li class="nav-item">
-		              <a href="{{ route('inicio')}}#dramora">Dra Mora</a>
+		              <a href="{{ route('nosotros')}}">Nosotros</a>
 		            </li>
 		            <li class="nav-item">
 		              <a href="{{ route('inicio')}}#procedimientos">Procedimientos</a>
@@ -153,8 +179,8 @@
 							<div class="single-footer-widget mail-chimp">
 								<h6>CMPLASTICA</h6>
 								<ul class="footer-nav">
-									<li><a href="{{ route('inicio')}}#home">Inicio</a></li>
-									<li><a href="{{ route('inicio')}}#dramora">Dra Mora</a></li>
+									<li><a href="{{ route('inicio')}}">Inicio</a></li>
+									<li><a href="{{ route('nosotros')}}">Nosotros</a></li>
 									<li><a href="{{ route('inicio')}}#procedimientos">Procedimientos</a></li>
 									<li><a href="{{ route('promociones')}}">Promociones</a></li>
 									<li><a href="{{ route('faqs')}}">Preguntas Frecuentes</a></li>
@@ -162,27 +188,11 @@
 								</ul>	
 							</div>
 						</div>
-						<div class="col-lg-2  col-md-6">
-							<div class="single-footer-widget mail-chimp">
-								<h6>PROCEDIMIENTOS</h6>
-								<ul class="footer-nav">
-									<li><a href="#">Cirugía Estética</a></li>
-									<li><a href="#">Cirugía Reparadora</a></li>
-									<li><a href="#">Mínimamente Invasiva</a></li>
-								</ul>	
-								<!-- <h6 class="mb-20">Contact Us</h6>
-								<p>
-									56/8, bir uttam qazi nuruzzaman road, west panthapath, kalabagan, Dhanmondi, Dhaka - 1205
-								</p>
-								<h3>012-6532-568-9746</h3>
-								<h3>012-6532-568-97468</h3> -->
-							</div>
-						</div>
 						<div class="col-lg-6  col-md-12">
 							<div class="single-footer-widget newsletter">
 								<h6>UBICACIÓN</h6>
 								<p><i class="fas fa-map-marker icon-footer"></i> Antonio Bellet 143 oficina 408, Providencia, Región Metropolitana.</p>
-								<div id="map">
+								<div id="map" class="{{ Request::is('contacto') ? 'hidden-div' : '' }}">
 								</div>
 								<script>
 									function initMap(){
@@ -218,20 +228,25 @@
 								</div> -->
 							</div>
 						</div>
-					</div>
-
-					<div class="row footer-bottom d-flex justify-content-between">
-						<p class="col-lg-8 col-sm-12 footer-text m-0">
-							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-							Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						</p>
-						<div class="col-lg-4 col-sm-12 footer-social">
-							<a href="#"><i class="fa fa-facebook"></i></a>
-							<a href="https://www.instagram.com/cmplastica/"><i class="fa fa-instagram"></i></a>
-							<a href="https://www.youtube.com/channel/UCPS5lgBIuszTHQB0Om1exAg"><i class="fa fa-youtube"></i></a>
+						<div class="col-lg-2  col-md-6">
+							<div class="single-footer-widget mail-chimp">
+								<h6>SÍGUENOS</h6>
+								<ul class="footer-nav">
+									<li><a href="https://web.facebook.com/cmplastica/"><i class="fab fa-facebook-f" style="color: white;"></i> cmplastica</a></li>
+									<li><a href="https://www.instagram.com/cmplastica/"><i class="fab fa-instagram" style="color: white;"></i> cmplastica</a></li>
+									<li><a href="https://www.youtube.com/channel/UCPS5lgBIuszTHQB0Om1exAg"><i class="fab fa-youtube" style="color: white;"></i> Dra. Carla Mora</a></li>
+								</ul>	
+								<!-- <h6 class="mb-20">Contact Us</h6>
+								<p>
+									56/8, bir uttam qazi nuruzzaman road, west panthapath, kalabagan, Dhanmondi, Dhaka - 1205
+								</p>
+								<h3>012-6532-568-9746</h3>
+								<h3>012-6532-568-97468</h3> -->
+							</div>
 						</div>
 					</div>
+
+					
 				</div>
 			</footer>
 			<!-- End footer Area -->
