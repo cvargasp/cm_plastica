@@ -47,4 +47,8 @@ Route::get('promociones/{promoId}', function ($promoId) {
    	return view('detalle_promociones', ['promoId' => $promoId]);
 })->name('promo_detalles');
 
-Route::resource('promotions','PromotionController');
+Route::resource('promotions','PromotionController')->middleware('auth.basic');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
