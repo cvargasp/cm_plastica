@@ -46,7 +46,7 @@
 								<p> Comienza a hacer efecto entre 48 - 72 horas después de su aplicación y su máximo efecto se logra en 1-2 semanas. Su duración es entre 4 a 6 meses. </p>												
 							</div>
 							<div class="col-lg-3 col-md-3">
-								IMAGEN
+								<img src="{{asset('images/procedimientos/minimamente_invasivos/rejuvenecimiento_facial.jpg')}}" width="100%" alt="">
 							</div>
 						</div>
 					</div>
@@ -61,7 +61,7 @@
 								<p> El procedimiento dura unos 20 min., su efecto es inmediato y se mantiene por 8 a 16 meses. </p>					
 							</div>
 							<div class="col-lg-3 col-md-3">
-								IMAGEN
+								<img src="{{asset('images/procedimientos/minimamente_invasivos/relleno_surcos.jpg')}}" width="100%" alt="">
 							</div>
 						</div>
 					</div>
@@ -75,7 +75,7 @@
 								<p> También se puede mejorar el largo y resaltar la punta nasal. Su efecto es inmediato y dura aproximadamente un año. </p>
 							</div>
 							<div class="col-lg-3 col-md-3">
-								IMAGEN
+								<img src="{{asset('images/procedimientos/minimamente_invasivos/rinomodelacion.jpg')}}" width="100%" alt="">
 							</div>
 						</div>
 					</div>
@@ -88,7 +88,7 @@
 								<p> Próximamente </p>												
 							</div>
 							<div class="col-lg-3 col-md-3">
-								IMAGEN
+								<img src="{{asset('images/procedimientos/minimamente_invasivos/lipoinyeccion.jpg')}}" width="100%" alt="">
 							</div>
 						</div>
 					</div>

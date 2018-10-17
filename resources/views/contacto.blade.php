@@ -13,33 +13,55 @@
 					</p>
 				</div>
 			</div>
+			@if (session('success'))
+			    <div class="alert alert-success mb-40">
+			        {{ session('success') }}
+			    </div>
+			@endif
 			<div class="row">
 				<div class="single-blog col-lg-6 col-md-6 text-center d-flex flex-column">
-					<div class="input-group mb-3">
-					  	<div class="input-group-prepend">
-					    	<span class="input-group-text" id="basic-addon1"><i class="fas fa-user icon-contact"></i></span>
-					  	</div>
-					  	<input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" aria-describedby="basic-addon1">
-					</div>
-					<div class="input-group mb-3">
-					  	<div class="input-group-prepend">
-					    	<span class="input-group-text" id="basic-addon1"><i class="fas fa-phone icon-contact"></i></span>
-					  	</div>
-					  	<input type="text" class="form-control" placeholder="Teléfono" aria-label="telefono" aria-describedby="basic-addon1">
-					</div>
-					<div class="input-group mb-3">
-					  	<div class="input-group-prepend">
-					    	<span class="input-group-text" id="basic-addon1">@</span>
-					  	</div>
-					  	<input type="text" class="form-control" placeholder="Correo" aria-label="correo" aria-describedby="basic-addon1">
-					</div>
-					<div class="input-group">
-					  	<div class="input-group-prepend">
-					    	<span class="input-group-text"><i class="fas fa-comment-dots icon-contact"></i></span>
-					  	</div>
-					  	<textarea class="form-control contact-textarea" placeholder="Comentario" aria-label="With textarea"></textarea>
-					</div>
-					<input type="submit" class="btn btn-info" id="submit" name="submit" value="Enviar mensaje" style="margin-top: 10px">
+					<form method="post" action="{{route('contact.store')}}">
+						{{ csrf_field() }}
+						<div class="form-group">
+							<div class="input-group mb-3">
+							  	<div class="input-group-prepend">
+							    	<span class="input-group-text" id="basic-addon1"><i class="fas fa-user icon-contact"></i></span>
+							  	</div>
+							  	<input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" aria-describedby="basic-addon1" name="nombre">
+							  	@if ($errors->has('nombre'))
+							  		<small class="form-text invalid-feedback"> {{ $errors->first('nombre')}} </small>
+							  	@endif
+							</div>
+							<div class="input-group mb-3">
+							  	<div class="input-group-prepend">
+							    	<span class="input-group-text" id="basic-addon1"><i class="fas fa-phone icon-contact"></i></span>
+							  	</div>
+							  	<input type="text" class="form-control" placeholder="Teléfono" aria-label="telefono" aria-describedby="basic-addon1" name="telefono">
+							  	@if ($errors->has('telefono'))
+							  		<small class="form-text invalid-feedback"> {{ $errors->first('telefono')}} </small>
+							  	@endif
+							</div>
+							<div class="input-group mb-3">
+							  	<div class="input-group-prepend">
+							    	<span class="input-group-text" id="basic-addon1">@</span>
+							  	</div>
+							  	<input type="text" class="form-control" placeholder="Correo" aria-label="correo" aria-describedby="basic-addon1" name="email">
+							  	@if ($errors->has('email'))
+							  		<small class="form-text invalid-feedback"> {{ $errors->first('email')}} </small>
+							  	@endif
+							</div>
+							<div class="input-group">
+							  	<div class="input-group-prepend">
+							    	<span class="input-group-text"><i class="fas fa-comment-dots icon-contact"></i></span>
+							  	</div>
+							  	<textarea class="form-control contact-textarea" placeholder="Comentario" aria-label="With textarea" name="comentario"></textarea>
+							  	@if ($errors->has('comentario'))
+							  		<small class="form-text invalid-feedback"> {{ $errors->first('comentario')}} </small>
+							  	@endif
+							</div>
+							<button type="submit" class="btn btn-info btn-block mt-10 form-btn">Enviar mensaje</button>
+						</div>
+					</form>
 				</div>	
 				<div class="col-lg-6 col-md-6 d-flex flex-column text-right-2 map-area">
 					<div id="map">
@@ -61,9 +83,9 @@
 					<br>
 					<p> <i class="fas fa-map-marker icon-contact"></i>  Antonio Bellet 143 oficina 408, Providencia, Región Metropolitana. </p>
 					<p> <span class="fas fa-at icon-contact"></span> contacto@cmplastica.cl </p>
-					<p> <span class="fab fa-whatsapp icon-contact"></span>  +56 9 3260 2113</p>
-					<p> <span class="fab fa-whatsapp icon-contact"></span>  +56 9 5668 2487 </p>
-					<p> <span class="fas fa-phone icon-contact"></span> 2 266 479 83 </p>
+					<p> <span class="fab fa-whatsapp icon-contact"></span>  <a style="color:#777777" href="https://wa.me/56932602113">+56 9 3260 2113</a></p>
+					<p> <span class="fab fa-whatsapp icon-contact"></span>  <a style="color:#777777" href="https://wa.me/56956682487">+56 9 5668 2487 </a> </p>
+					<p> <span class="fas fa-phone icon-contact"></span> <a style="color:#777777" href=""> 2 266 479 83 </a> </p>
 				</div>
 			</div>
 		</div>

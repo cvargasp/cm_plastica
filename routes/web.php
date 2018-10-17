@@ -27,9 +27,9 @@ Route::get('/preguntas_frecuentes', function(){
 	return view('preguntas_frecuentes');
 })->name('faqs');
 
-Route::get('/contacto', function(){
-	return view('contacto');
-})->name('contacto');
+// Route::get('/contacto', function(){
+// 	return view('contacto');
+// })->name('contacto');
 
 Route::get('/procedimientos/cirugia-estetica', function(){
 	return view('cirugia_estetica');
@@ -48,3 +48,12 @@ Route::get('promociones/{promoId}', function ($promoId) {
 })->name('promo_detalles');
 
 Route::resource('promotions','PromotionController');
+
+Route::get('/contacto', [
+	'uses' => 'ContactMessageController@create'
+])->name('contacto');
+
+Route::post('/contacto', [
+	'uses' => 'ContactMessageController@store',
+	'as' => 'contact.store'
+]);

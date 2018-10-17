@@ -39,6 +39,7 @@
 			<link rel="stylesheet" href="{{asset('css/main.css')}}">
 		 	<link rel="stylesheet" type="text/css" href="{{asset('css/full-slider.css')}}">
 			<link rel="stylesheet" href="{{asset('css/hovereffects.css')}}">
+
 			<style>
 				#map {
 					height: 200px;
@@ -50,14 +51,14 @@
 			</style>
 			<!-- Smartsupp Live Chat script -->
 			<script type="text/javascript">
-				var _smartsupp = _smartsupp || {};
-				_smartsupp.key = 'ac004477440663742bcd2e4aff6aa39a546bec88';
-				window.smartsupp||(function(d) {
-				  var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
-				  s=d.getElementsByTagName('script')[0];c=d.createElement('script');
-				  c.type='text/javascript';c.charset='utf-8';c.async=true;
-				  c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
-				})(document);
+			var _smartsupp = _smartsupp || {};
+			_smartsupp.key = '73f19497bc56dbfce1a6f6913f62e414570c0df8';
+			window.smartsupp||(function(d) {
+			  var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+			  s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+			  c.type='text/javascript';c.charset='utf-8';c.async=true;
+			  c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+			})(document);
 			</script>
 		</head>
 		<body>
@@ -106,9 +107,9 @@
 		            <li class="nav-item active">
 		              <a href="{{ route('inicio')}}">Inicio</a>
 		            </li>
-		            <li class="nav-item">
+		            <!-- <li class="nav-item">
 		              <a href="{{ route('nosotros')}}">Nosotros</a>
-		            </li>
+		            </li> -->
 		            <li class="nav-item">
 		              <a href="{{ route('inicio')}}#procedimientos">Procedimientos</a>
 		            </li>
@@ -180,7 +181,7 @@
 								<h6>CMPLASTICA</h6>
 								<ul class="footer-nav">
 									<li><a href="{{ route('inicio')}}">Inicio</a></li>
-									<li><a href="{{ route('nosotros')}}">Nosotros</a></li>
+									<!-- <li><a href="{{ route('nosotros')}}">Nosotros</a></li> -->
 									<li><a href="{{ route('inicio')}}#procedimientos">Procedimientos</a></li>
 									<li><a href="{{ route('promociones')}}">Promociones</a></li>
 									<li><a href="{{ route('faqs')}}">Preguntas Frecuentes</a></li>

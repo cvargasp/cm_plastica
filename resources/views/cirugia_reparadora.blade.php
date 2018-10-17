@@ -77,7 +77,7 @@
 								<p> Esta es una condición que es cubierta por el sistema de salud, previa confirmación diagnóstica con ecotomografía mamaria y biopsia operatoria de glándula mamaria. </p>						
 							</div>
 							<div class="col-lg-3 col-md-3">
-								IMAGEN
+								<img src="{{asset('images/procedimientos/cirugia_reparadora/ginecomastia.jpg')}}" width="100%" alt="">
 							</div>
 						</div>
 					</div>
@@ -115,7 +115,7 @@
 								<p> Al sacar el yeso, la nariz aún está inflamada y va a adquirir su forma definitiva dentro de los próximos tres meses. </p>					
 							</div>
 							<div class="col-lg-3 col-md-3">
-								IMAGEN
+								<img src="{{asset('images/procedimientos/cirugia_reparadora/rinoseptoplastia.jpg')}}" width="100%" alt="">
 							</div>
 						</div>
 					</div>
@@ -142,7 +142,7 @@
 								<p> Esta condición es cubierta por sistema previsional de salud. </p>				
 							</div>
 							<div class="col-lg-3 col-md-3">
-								IMAGEN
+								<img src="{{asset('images/procedimientos/cirugia_reparadora/orejas_aladas.jpg')}}" width="100%" alt="">
 							</div>
 						</div>
 					</div>
@@ -156,7 +156,7 @@
 								<p> La perforación, hecha en la infancia, se va agrandando hasta romperse debido al peso de los accesorios, tracciones generalmente en la noche al dormir, o eventos traumáticos tales como el robo de los accesorios. Esto se corrige bajo anestesia local, en sala de procedimiento, se maneja el postoperatorio con analgésicos orales, no requiere reposo, los puntos se retiran a las 2 semanas, y se puede realizar una nueva perforación 1 mes post retiro de puntos. </p>			
 							</div>
 							<div class="col-lg-3 col-md-3">
-								IMAGEN
+								<img src="{{asset('images/procedimientos/cirugia_reparadora/bifido.jpg')}}" width="100%" alt="">
 							</div>
 						</div>
 					</div>
@@ -181,7 +181,7 @@
 								</ul>					
 							</div>
 							<div class="col-lg-3 col-md-3">
-								IMAGEN
+								<img src="{{asset('images/procedimientos/cirugia_reparadora/reduccion_mamaria.jpg')}}" width="100%" alt="">
 							</div>
 						</div>
 					</div>					
@@ -194,7 +194,7 @@
 								<p> Próximamente </p>				
 							</div>
 							<div class="col-lg-3 col-md-3">
-								IMAGEN
+								<img src="{{asset('images/procedimientos/cirugia_reparadora/baja_peso.jpg')}}" width="100%" alt="">
 							</div>
 						</div>
 					</div>
@@ -228,7 +228,7 @@
 								<p> Y así los defectos pueden ser múltiples, es importante entender que la cicatriz depende en gran medida de los cuidados que el paciente le provee y que mientras antes se intervenga mejor, que la cirugía bien indicada es una excelente alternativa, pero que siempre estaremos cambiando una cicatriz por otra ojalá de mejor calidad y apariencia, una cicatriz plana, lineal, elástica y del color de la piel. </p>				
 							</div>
 							<div class="col-lg-3 col-md-3">
-								IMAGEN
+								<img src="{{asset('images/procedimientos/cirugia_reparadora/cicatrices.jpg')}}" width="100%" alt="">
 							</div>
 						</div>
 					</div>					
@@ -241,7 +241,7 @@
 								<p> Próximamente </p>			
 							</div>
 							<div class="col-lg-3 col-md-3">
-								IMAGEN
+								<img src="{{asset('images/procedimientos/cirugia_reparadora/brazos.jpg')}}" width="100%" alt="">
 							</div>
 						</div>
 					</div>
@@ -254,7 +254,7 @@
 								<p> Próximamente </p>				
 							</div>
 							<div class="col-lg-3 col-md-3">
-								IMAGEN
+								<img src="{{asset('images/procedimientos/cirugia_reparadora/muslos.jpg')}}" width="100%" alt="">
 							</div>
 						</div>
 					</div>					
@@ -267,7 +267,7 @@
 								<p> Próximamente </p>				
 							</div>
 							<div class="col-lg-3 col-md-3">
-								IMAGEN
+								<img src="{{asset('images/procedimientos/cirugia_reparadora/mamaria_transgender.jpg')}}" width="100%" alt="">
 							</div>
 						</div>
 					</div>					

@@ -38,8 +38,8 @@ class PromotionController extends Controller
         if($request->hasfile('filename'))
          {
             $file = $request->file('filename');
-            $name=time().$file->getClientOriginalName();
-            $file->move(public_path().'/images/', $name);
+            $name = time().$file->getClientOriginalName();
+            $file->move(public_path().'/images/promociones', $name);
          }
         $promotion= new \App\Promotion;
         $promotion->name=$request->get('name');

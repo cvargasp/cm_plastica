@@ -29,19 +29,19 @@
 				<div class="col-auto mb-3" >
 					<div class="card grid h-100" style="width: 18rem; display: flex">
 							<figure class="effect-julia">
-								<img src="images/{{ $promotion['filename'] }}">
+								<img src="images/promociones/{{ $promotion['filename'] }}">
 								<figcaption>
 								@php
-								 	$promotion_price = number_format($promotion['promotion_price'], 0, '.', '.');
-								 	$normal_price = number_format($promotion['normal_price'], 0, '.', '.');
+								 	$promotion_price = $promotion['promotion_price'];
+								 	$normal_price = $promotion['normal_price'];
 								@endphp
 								<div>		
 								@if( $promotion['promotion_price'] == $promotion['normal_price'])
-									<p> PRECIO: ${{$normal_price}}</p>
+									<p> PRECIO: {{$normal_price}}</p>
 								@else
-									<p> OFERTA: ${{$promotion_price}}</p>
+									<p> OFERTA: {{$promotion_price}}</p>
 									<br>
-									<p> ANTES: ${{$normal_price}}</p>
+									<p> ANTES: {{$normal_price}}</p>
 								@endif						
 									
 								</div>

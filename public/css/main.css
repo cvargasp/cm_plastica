@@ -2927,3 +2927,7 @@ p {
     margin-top: 0 !important;
   }
 }
+
+.invalid-feedback{
+  display: block;
+}

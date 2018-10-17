@@ -61,7 +61,7 @@
 								<p> Nuestro cuerpo forma una cápsula alrededor del implante y por múltiples razones esta cápsula se contrae uni o bilateralmente, de manera precoz o tardía, manifestándose por endurecimiento, deformidad, desplazamiento y dolor en sus distintas etapas evolutivas.</p>				
 							</div>
 							<div class="col-lg-3 col-md-3">
-								<img src="{{asset('images/mamario.jpg')}}" width="100%" alt="">
+								<img src="{{asset('images/procedimientos/cirugia_estetica/mamario.jpg')}}" width="100%" alt="">
 							</div>
 						</div>
 					</div>
@@ -106,7 +106,7 @@
 								</ul>
 							</div>
 							<div class="col-lg-3 col-md-3">
-								IMAGEN
+								<img src="{{asset('images/procedimientos/cirugia_estetica/gluteos.jpg')}}" width="100%" alt="">
 							</div>
 						</div>
 					</div>
@@ -125,7 +125,7 @@
 								<p> Con los anterior se logra un abdomen plano, se acentúa la cintura, el ombligo vuelve a ser pequeño y profundo, y la cicatriz resulta una línea escondida en la ropa interior. </p>
 							</div>
 							<div class="col-lg-3 col-md-3">
-								IMAGEN
+								<img src="{{asset('images/procedimientos/cirugia_estetica/abdominaplastia.jpg')}}" width="100%" alt="">
 							</div>
 						</div>
 					</div>
@@ -139,7 +139,7 @@
 								<p> La técnica consiste en la extracción de las células de grasa mediante cánulas de aspiración y consta de dos fases, la primera en la que se extrae la grasa profunda para disminuir el volumen de los contornos y la segunda que se realiza en un plano más superficial y que tiene como objetivo dar forma al contorno. </p>					
 							</div>
 							<div class="col-lg-3 col-md-3">
-								IMAGEN
+								<img src="{{asset('images/procedimientos/cirugia_estetica/lipoescultura.jpg')}}" width="100%" alt="">
 							</div>
 						</div>
 					</div>
@@ -152,14 +152,14 @@
 								<p> La pexia mamaria pretende devolver la forma y posición anatómica a la mama caída, que se produce en una mama que ha perdido su volumen y la elasticidad de la piel. Este exceso de piel debe ser removido y la glándula reacomodada. La extensión de la cicatriz va a depender de cuanta piel se desee sacar pudiendo ser de menos a más. </p>
 								<p> Por otra parte la paciente tiene que tomar la decisión de mantener el volumen mamario actual, aumentarlo mediante una prótesis mamaría o disminuirlo. </p>
 								<h2> Alrededor de areola </h2>
-								IMAGEN
+								<img src="{{asset('images/procedimientos/cirugia_estetica/levantamiento_mamario_1.jpg')}}" width="70%" alt="">
 								<h2> Alrededor de areola + Vertical </h2>
-								IMAGEN
+								<img src="{{asset('images/procedimientos/cirugia_estetica/levantamiento_mamario_2.jpg')}}" width="70%" alt="">
 								<h2> Alrededor de areola + Vertical + Horizontal (T invertida) </h2>
-								IMAGEN					
+								<img src="{{asset('images/procedimientos/cirugia_estetica/levantamiento_mamario_3.jpg')}}" width="70%" alt="">				
 							</div>
 							<div class="col-lg-3 col-md-3">
-								IMAGEN
+								<img src="{{asset('images/procedimientos/cirugia_estetica/levantamiento_mamario.jpg')}}" width="100%" alt="">
 							</div>
 						</div>
 					</div>
@@ -184,7 +184,7 @@
 								</ul>					
 							</div>
 							<div class="col-lg-3 col-md-3">
-								IMAGEN
+								<img src="{{asset('images/procedimientos/cirugia_estetica/reduccion_mamaria.jpg')}}" width="100%" alt="">
 							</div>
 						</div>
 					</div>
@@ -202,7 +202,7 @@
 								<p> Después de los 60 años la cirugía no tiene un resultado óptimo por lo tanto la piel del paciente “rejuvenece” menos años. </p>					
 							</div>
 							<div class="col-lg-3 col-md-3">
-								IMAGEN
+								<img src="{{asset('images/procedimientos/cirugia_estetica/rejuvenecimiento_facial.jpg')}}" width="100%" alt="">
 							</div>
 						</div>
 					</div>
@@ -221,7 +221,7 @@
 								<p> Esta cirugía se puede realizar con sedación más anestesia local y el paciente se da de alta 8 horas posterior al procedimiento con hospitalización transitoria. </p>					
 							</div>
 							<div class="col-lg-3 col-md-3">
-								IMAGEN
+								<img src="{{asset('images/procedimientos/cirugia_estetica/cirugia_parpados.jpg')}}" width="100%" alt="">
 							</div>
 						</div>
 					</div>
@@ -259,7 +259,7 @@
 								<p> Al sacar el yeso, la nariz aún está inflamada y va a adquirir su forma definitiva dentro de los próximos tres meses. </p>						
 							</div>
 							<div class="col-lg-3 col-md-3">
-								IMAGEN
+								<img src="{{asset('images/procedimientos/cirugia_estetica/rinoplastia.jpg')}}" width="100%" alt="">
 							</div>
 						</div>
 					</div>
@@ -274,7 +274,7 @@
 								<p> En la cara es ideal para restaurar volumen y borrar surcos ya que se pierde muy poca grasa, es tejido propio y su duración es mayor a otro tipo de rellenos. </p>					
 							</div>
 							<div class="col-lg-3 col-md-3">
-								IMAGEN
+								<img src="{{asset('images/procedimientos/cirugia_estetica/lipoinyeccion.jpg')}}" width="100%" alt="">
 							</div>
 						</div>
 					</div>

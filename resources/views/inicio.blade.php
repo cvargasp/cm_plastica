@@ -8,29 +8,107 @@
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
         </ol>
         <div class="carousel-inner" role="listbox">
-          <!-- Slide One - Set the background image for this slide in the line below -->
-          <div class="carousel-item active" style="background-image: url('images/1.jpg')">
-            <div class="carousel-caption d-none d-md-block">
-              	<h1>PROMOCIÓN DEL MES: RINOMODELACIÓN</h1>
-				<h4>Desde $200.000 (Todo Junio)</h4>
-            </div>
-          </div>
-          <!-- Slide Two - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('images/2.jpg')">
-            <div class="carousel-caption d-none d-md-block">
-              	<h1>REJUVENECIMIENTO FACIAL COMPLETO</h1>
-				<h4>$2.550.000</h4>
-            </div>
-          </div>
-          <!-- Slide Three - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('images/3.jpg')">
-            <div class="carousel-caption d-none d-md-block">
-       	 	    <h1>TOXINA BOTULÍNICA</h1>
-	    		<h4>$80.000 por zona!</h4>
-            </div>
-          </div>
+        	<div class="carousel-item active" style="background-image: url('images/carousel/0.jpg')">
+            	<div class="carousel-caption d-none d-md-block">
+              		<a href="{{ route('promo_detalles','1')}}">
+              			<h1>PROMOCIÓN: TRATAMIENTO REDUCTIVO</h1>
+						<h4>HECCUS TURBO 3D: $480.000 las 10 sesiones</h4>
+					</a>
+            	</div>
+          	</div>
+          	<!-- Slide One - Set the background image for this slide in the line below -->
+          	<div class="carousel-item" style="background-image: url('images/carousel/1.jpg')">
+            	<div class="carousel-caption d-none d-md-block">
+              		<a href="{{ route('promo_detalles','1')}}">
+              			<h1>RINOPLASTÍA DE PUNTA</h1>
+						<h4>Promoción de septiembre: $1.550.000.</h4>
+					</a>
+            	</div>
+          	</div>
+          	<!-- Slide Two - Set the background image for this slide in the line below -->
+          	<div class="carousel-item" style="background-image: url('images/carousel/2.jpg')">
+            	<div class="carousel-caption d-none d-md-block">
+            		<a href="{{ route('promo_detalles','1')}}">
+              			<h1>EXTRACCIÓN DE LUNAR MÁS BIOPSIA</h1>
+						<h4>Promoción de septiembre: desde $280.000</h4>
+					</a>
+            	</div>
+          	</div>
+          	<!-- Slide Three - Set the background image for this slide in the line below -->
+          	<div class="carousel-item" style="background-image: url('images/carousel/3.jpg')">
+            	<div class="carousel-caption d-none d-md-block">
+            		<a href="{{ route('promo_detalles','1')}}">
+       	 	    		<h1>LIPOSUCCIÓN POR ZONAS</h1>
+	    				<h4>Zona pequeña: desde $1.455.000 y Zona grande: desde $1.875.000.</h4>
+	    			</a>
+            	</div>
+          	</div>
+          	<div class="carousel-item" style="background-image: url('images/carousel/4.jpg')">
+            	<div class="carousel-caption d-none d-md-block">
+            		<a href="{{ route('promo_detalles','1')}}">
+              			<h1>EXTRACCIÓN DE BOLAS DE BICHAT</h1>
+						<h4>Valor: $1.250.000</h4>
+					</a>
+            	</div>
+          	</div>
+          	<div class="carousel-item" style="background-image: url('images/carousel/5.jpg')">
+            	<div class="carousel-caption d-none d-md-block">
+            		<a href="{{ route('promo_detalles','1')}}">
+              			<h1>PROMOCIÓN DEL MES: RINOMODELACIÓN</h1>
+						<h4>Desde $250.000</h4>
+					</a>
+            	</div>
+          	</div>
+          	<div class="carousel-item" style="background-image: url('images/carousel/6.jpg')">
+            	<div class="carousel-caption d-none d-md-block">
+            		<a href="{{ route('promo_detalles','1')}}">
+              			<h1>REJUVENECIMIENTO FACIAL CON PEELING</h1>
+						<h4>$90.000</h4>
+					</a>
+            	</div>
+          	</div>
+          	<div class="carousel-item" style="background-image: url('images/carousel/7.jpg')">
+            	<div class="carousel-caption d-none d-md-block">
+            		<a href="{{ route('promo_detalles','1')}}">
+              			<h1>CIRUGÍA DE PÁRPADOS</h1>
+						<h4>$1.500.000</h4>
+					</a>
+            	</div>
+          	</div>
+          	<div class="carousel-item" style="background-image: url('images/carousel/8.jpg')">
+            	<div class="carousel-caption d-none d-md-block">
+            		<a href="{{ route('promo_detalles','1')}}">
+              			<h1>TOXINA BOTULÍNICA</h1>
+						<h4>$80.000 por zona!</h4>
+					</a>
+            	</div>
+          	</div>
+          	<div class="carousel-item" style="background-image: url('images/carousel/9.jpg')">
+            	<div class="carousel-caption d-none d-md-block">
+            		<a href="{{ route('promo_detalles','1')}}">
+              			<h1>LIPOESCULTURA ABDOMEN HD HOMBRE/MUJER</h1>
+						<h4>$2.500.000</h4>
+					</a>
+            	</div>
+          	</div>
+          	<div class="carousel-item" style="background-image: url('images/carousel/10.jpg')">
+            	<div class="carousel-caption d-none d-md-block">
+            		<a href="">
+              			<h1>MAMOPLASTÍA DE AUMENTO</h1>
+						<h4>Desde $2.300.000 Hasta $2.630.000</h4>
+					</a>
+            	</div>
+          	</div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -118,28 +196,28 @@
 			<div class="row justify-content-center">
 				<div class="col-auto mb-3">
 					<div class="card" style="width: 18rem;">
-					  	<img class="card-img-top" src="{{asset('images/c1.jpg')}}" alt="Card image cap">
+					  	<img class="card-img-top" src="{{asset('images/testimonios/Anette-Kraus.jpeg')}}" alt="Anette Kraus">
 					  	<div class="card-body">
-					    	<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					    	<p>Nombre Apellido</p>
+					    	<p class="card-text font-italic">"CM Plástica es la única clínica estética en la cual la realidad supera las expectativas."</p>
+					    	<p>Anette Kraus</p>
 					  	</div>
 					</div>
 				</div>
 				<div class="col-auto mb-3">
 					<div class="card" style="width: 18rem;">
-					  	<img class="card-img-top" src="{{asset('images/c2.jpg')}}" alt="Card image cap">
+					  	<img class="card-img-top" src="{{asset('images/testimonios/Barbara-Chacana.jpeg')}}" alt="Barbara Chacana">
 					  	<div class="card-body">
-					    	<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					    	<p>Nombre Apellido</p>
+					    	<p class="card-text font-italic">"Una clínica de verdadera calidad humana y preocupación por el paciente."</p>
+					    	<p>Barbara Chacana</p>
 					  	</div>
 					</div>
 				</div>
 				<div class="col-auto mb-3">
 					<div class="card" style="width: 18rem;">
-					  	<img class="card-img-top" src="{{asset('images/c3.jpg')}}" alt="Card image cap">
+					  	<img class="card-img-top" src="{{asset('images/testimonios/Carla-Llana.jpeg')}}" alt="Carla Llaña">
 					  	<div class="card-body">
-					    	<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					    	<p>Nombre Apellido</p>
+					    	<p class="card-text font-italic">"En CM Plástica todo lo hacen con preocupación y dedicación. Encontré exactamente lo que estaba buscando."</p>
+					    	<p>Carla Llaña</p>
 					  	</div>
 					</div>
 				</div>
